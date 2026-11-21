@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Black Bull – Storefront demo</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="bar"><div class="logo">Black<b>Bull</b></div>
+<button class="btn ghost" id="theme" aria-label="Switch light or dark theme">Theme</button>
+<button class="btn cartbtn" id="openCart" aria-label="Open cart">Cart<i id="count">0</i></button></div></header>
+
+<section class="hero"><div class="in"><div><h1>Train hard. Recover harder.</h1><p>Protein, pre-workout and creatine for lifters. Free delivery over R800.</p><button class="btn" id="shop">Shop supplements</button></div>
+<div class="tubs" id="heroArt" aria-hidden="true"></div></div></section>
+
+<main class="wrap" id="shopTop">
+<div class="tools"><input id="q" type="search" placeholder="Search products" aria-label="Search products">
+<select id="sort" aria-label="Sort products"><option value="feat">Featured</option><option value="lo">Price: low to high</option><option value="hi">Price: high to low</option></select>
+<div class="chips" id="chips" role="group" aria-label="Goals"></div></div>
+<div class="grid" id="grid" aria-live="polite"></div></main>
+
+<div class="scrim" id="scrim"></div>
+<aside class="panel" id="prod" role="dialog" aria-modal="true" aria-label="Product details" hidden></aside>
+<aside class="panel" id="cart" role="dialog" aria-modal="true" aria-label="Cart" hidden></aside>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
